@@ -22,6 +22,8 @@ class CreateUsersTable extends Migration
             $table->unsignedBigInteger('ci');
             $table->unsignedBigInteger('empresaId');
             $table->foreign('empresaId')->references('id')->on('empresas');
+            $table->unsignedBigInteger('rolId');
+            $table->foreign('rolId')->references('id')->on('rols');
             $table->rememberToken();
             $table->timestamps();
         });

@@ -30,5 +30,6 @@
     <div class="content p-4">
         @yield('container')
     </div>
+</div>
 </body>
 </html>

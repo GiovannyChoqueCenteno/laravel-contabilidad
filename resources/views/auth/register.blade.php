@@ -11,7 +11,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Nombre de la empresa') }}</label>
 
                             <div class="col-md-6">
-                                <input id="namee" type="text" class="form-control @error('namee') is-invalid @enderror" name="namee" value="{{ old('namee') }}" required autocomplete="namee">
+                                <input id="namee" type="text" class="form-control @error('namee') is-invalid @enderror" name="namee" value="{{ old('namee') }}" required autocomplete="namee" autofocus>
 
                                 @error('namee')
                                 <span class="invalid-feedback" role="alert">
@@ -20,7 +20,7 @@
                                 @enderror
                             </div>
                         </div>
-
+                <h2> Datos del usuario</h2>
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Carnet de Identidad') }}</label>
 
@@ -38,7 +38,7 @@
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
 
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" >
 
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">

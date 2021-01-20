@@ -28,3 +28,13 @@ Route::post('/proveedorcrear','ProveedorController@create');
 Route::get('/proveedoractualizar/{id}' , 'ProveedorController@update');
 Route::get('/proveedoreliminar/{id}','ProveedorController@delete');
 
+Route::get('usuario','UsuarioController@index');
+Route::get('/usuariocrear' , 'UsuarioController@registrar');
+Route::post('/usuariocrear','UsuarioController@create');
+Route::get('/usuariorol/{id}', 'UsuarioController@rol');
+
+
+
+Route::get('todo' , function (){
+    return view('proveedores.lista');
+});
